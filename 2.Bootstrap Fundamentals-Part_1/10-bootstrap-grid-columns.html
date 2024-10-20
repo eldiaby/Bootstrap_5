@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Bootstrap Grid Columns</h1>
+
+      <!-- Basic Grid Layout -->
+      <div class="row bg-light">
+        <div class="col border">1 of 2</div>
+        <div class="col border">2 of 2</div>
+      </div>
+      <br />
+
+      <div class="row bg-light">
+        <div class="col border">1 of 3</div>
+        <div class="col border">2 of 3</div>
+        <div class="col border">3 of 3</div>
+      </div>
+      <br />
+
+      <div class="row bg-light">
+        <div class="col-12 border">1 of 3</div>
+        <div class="col-3 border">2 of 3</div>
+        <div class="col border">3 of 3</div>
+      </div>
+      <br /><br />
+
+      <!-- Column Sizes -->
+
+      <br /><br />
+
+      <!-- Responsive Grid -->
+      <div class="row bg-light">
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">1 of 3</div>
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">2 of 3</div>
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">3 of 3</div>
+      </div>
+      <br /><br />
+
+      <!-- Row Cols -->
+      <div class="row row-cols-sm-1 row-cols-md-4 row-cols-lg-6 bg-light">
+        <div class="col border">1 of 4</div>
+        <div class="col border">2 of 4</div>
+        <div class="col border">3 of 4</div>
+        <div class="col border">4 of 4</div>
+        <div class="col border">1 of 4</div>
+        <div class="col border">2 of 4</div>
+        <div class="col border">3 of 4</div>
+        <div class="col border">4 of 4</div>
+      </div>
+      <br /><br />
+
+      <br /><br />
+
+      <!-- Nesting -->
+      <div class="row bg-light">
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">1 of 3</div>
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">2 of 3</div>
+        <div class=" col-sm-12  col-md-6 col-lg-4 border">
+          <div class="row text-bg-dark">
+            <div class="col">test1</div>
+            <div class="col">test2</div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+
+      <!-- Gutters -->
+      <div class="row bg-light g-5">
+        <div class="col">
+          <div class=" border text-bg-primary p-4">1 of 3</div>
+        </div>
+        <div class="col">
+          <div class=" border text-bg-primary p-4">2 of 3</div>
+        </div>
+        <div class="col">
+          <div class=" border text-bg-primary p-4">3 of 3</div>
+        </div>
+      </div>
+      <br /><br />
+
+      <!-- Offsetting Columns -->
+      <div class="row">
+        <div class="offset-8 border  col col-2">1 of 2</div>
+        <div class=" border col col-2">2 of 2</div>
+      </div>
+      <br /><br />
+
+      <!-- Ordering -->
+      <div class="row">
+        <div class="col text-bg-primary p-2 order-2">col_1</div>
+        <div class="col text-bg-primary p-2 order-3">col_2</div>
+        <div class="col text-bg-primary p-2 order-4">col_3</div>
+        <div class="col text-bg-primary p-2 order-1">col_4</div>
+      </div>
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
