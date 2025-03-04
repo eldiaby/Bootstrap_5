@@ -1,0 +1,52 @@
+.about__image {
+  width: 200px;
+  height: 200px;
+}
+
+.about-content {
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+// portfolio section
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+// Services section
+.section-services {
+  background-image: url('./../images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & .container {
+    z-index: 2;
+  }
+
+  // Overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+// Stats section
+.section-stats {
+  & .stat {
+    @media only screen and (max-width: 767px) {
+      border-right: 0 !important;
+      margin-bottom: 42px;
+      border-bottom: var(--bs-dark) solid 1px;
+      padding-bottom: 18px;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.header {
+  background: #151515 url('./../images/intro-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+  }
+
+  &__text-container {
+    z-index: 2;
+  }
+
+  &__typing-text {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 3px solid var(--bs-primary); /* Cursor effect */
+    padding-right: 5px;
+    opacity: 1;
+    animation: blink 0.75s step-end infinite, slide-in 1s ease-out; /* Combine multiple animations */
+
+    @media only screen and (max-width: 767px) {
+      font-size: 32px !important;
+    }
+  }
+
+  &__roles {
+    font-family: 'serif';
+
+    span {
+      @media only screen and (max-width: 767px) {
+        font-size: 18px !important;
+        display: block;
+      }
+    }
+  }
+
+  &__social-links {
+    bottom: 50px;
+
+    @media only screen and (max-width: 767px) {
+      gap: 18px !important;
+    }
+
+    i {
+      transition: color 0.3s ease;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-20px); /* Starts from left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slides in to its original position */
+    opacity: 1;
+  }
+}
+
+// ========================================================== //
+// Icons animation
+/* Facebook Icon */
+.facebook-icon i {
+  color: #1877f2; /* Facebook blue color */
+}
+
+.facebook-icon:hover i {
+  color: #005fb2; /* Darker blue on hover */
+}
+
+/* YouTube Icon */
+.youtube-icon i {
+  color: #ff0000; /* YouTube red color */
+}
+
+.youtube-icon:hover i {
+  color: #cc0000; /* Darker red on hover */
+}
+
+/* LinkedIn Icon */
+.linkedin-icon i {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.linkedin-icon:hover i {
+  color: #005b88; /* Darker blue on hover */
+}
+
+/* GitHub Icon */
+.github-icon i {
+  color: #333; /* GitHub dark color */
+}
+
+.github-icon:hover i {
+  color: #24292f; /* Darker color on hover */
+}
+
+/* Instagram Icon */
+.instagram-icon i {
+  color: #e1306c; /* Instagram pink color */
+}
+
+.instagram-icon:hover i {
+  color: #c13584; /* Darker pink on hover */
+}
+
+/* Twitter Icon */
+.twitter-icon i {
+  color: #1da1f2; /* Twitter blue color */
+}
+
+.twitter-icon:hover i {
+  color: #0d95e8; /* Darker blue on hover */
+}
