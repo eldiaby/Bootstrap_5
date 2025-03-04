@@ -1,0 +1,16 @@
+.navbar {
+  transition: all 0.6s ease-in-out;
+
+  @media only screen and (max-width: 992px) {
+    background-color: var(--bs-dark);
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+}
