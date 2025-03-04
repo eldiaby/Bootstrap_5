@@ -1,0 +1,19 @@
+.header {
+  background-image: url('./../images/header-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__image-container {
+    @media only screen and (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__text-container {
+    @media only screen and (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+}

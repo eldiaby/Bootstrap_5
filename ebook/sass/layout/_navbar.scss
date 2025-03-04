@@ -1,0 +1,16 @@
+.navbar-logo {
+  width: 250px;
+}
+
+.navbar .btn-outline-light:hover {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
