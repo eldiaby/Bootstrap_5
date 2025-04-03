@@ -1,0 +1,39 @@
+
+//- Services section
+mixin serviceTemplete(servic)
+  .servic.col-md-4.d-flex.flex-column.align-items-center.text-center
+    i(class=servic.icon + ' fa-4x text-secondary mb-2')
+    p.fs-5.fw-bold= servic.title
+
+
+    //- Projects section 
+mixin projectCard(project)
+  .col-md-4
+    .card.border-0
+      img(src=`./${project.image}`, alt=project.title title=project.title)
+      .card-body
+        h3.h5.card-title= project.title
+        p.card-text
+          | #{project.description}
+          a(href=project.link) Read More 
+
+
+      //- Testimonials
+mixin testimonialItem(testimonial, isActive)
+  .carousel-item(class=isActive ? 'active' : '')
+    .d-flex.flex-column.justify-content-center.align-items-center.text-center
+      img(src=`./${testimonial.image}`, alt=testimonial.name, title=testimonial.name, class="rounded-circle testimonial-image")
+      p.w-50.my-4.fst-italic.fs-4.mb-4 #{testimonial.text}
+      .fw-bold.fs-5.mt-4= testimonial.name
+      div= testimonial.position
+
+
+mixin articleCard(card)
+  .col-md-6.col-lg-3
+    .card.my-2
+      .card-body
+        h5.card-title
+          i(class=`${card.icon} text-primary me-2`) 
+          | #{card.title}
+        p.card-text
+          | #{card.text}

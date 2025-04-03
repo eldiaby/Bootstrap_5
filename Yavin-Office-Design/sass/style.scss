@@ -1,0 +1,20 @@
+@use 'vendors/bootstrap'; // Added first to overwrite when i need
+//
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/utilities';
+@use 'base/base';
+@use 'components/buttons';
+@use 'components/testimonials';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/navbar';
+@use 'layout/sidebar';
+@use 'pages/home';
+@use 'pages/contact';
+@use 'utils/classes';
+@use 'utils/helpers';
+@use 'vendors/font-awesome';

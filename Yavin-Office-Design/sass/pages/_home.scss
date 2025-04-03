@@ -1,0 +1,28 @@
+.section-details {
+  & .decoration-star {
+    left: -200px;
+    width: 500px;
+  }
+}
+
+.section-services {
+  .servic {
+    @media only screen and (max-width: 992px) {
+      border-bottom: 1px #ccc solid;
+      margin: 12px 0;
+    }
+  }
+}
+
+.section-details--2 {
+  @media only screen and (max-width: 992px) {
+    margin-top: 18px !important;
+  }
+  .decoration-star {
+    right: -200px;
+    width: 500px;
+    @media only screen and (max-width: 992px) {
+      top: 300px;
+    }
+  }
+}
